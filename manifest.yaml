@@ -24,7 +24,7 @@ spec:
           gpu:
             count: 1
             type: gpu
-            product: nvidia-tesla-t4
+            product: NVIDIA-A100-SXM4-80GB
     Worker:
       count: 1
       resources:
@@ -34,5 +34,5 @@ spec:
           gpu:
             count: 1
             type: gpu
-            product: nvidia-tesla-t4
+            product: NVIDIA-A100-SXM4-80GB
 
