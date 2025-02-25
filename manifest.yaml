@@ -14,17 +14,24 @@ spec:
   debug:
     jupyter: false
 
-  tensorboard: ## optional, disabled by default
+  tensorboard: # optional, disabled by default
     enabled: true
 
   types:
-    Worker:
-      count: 1
+    Head:
       resources:
-        cpus: 2
-        ramRatio: 16 # 32GB
+        cpus: 6
+        ramRatio: 6
         accelerators: # optional
           gpu:
-            count: 2 # note that setting more than 1 MIG device per container is useless since only one will be usable https://docs.nvidia.com/datacenter/tesla/mig-user-guide/index.html#cuda-device-enumeration
-            type: gpu
+            count: 1
             product: NVIDIA-A100-SXM4-40GB
+            type: gpu
+
+    Workers:
+      - name: cpu-workers
+        count: 5
+        resources:
+          cpus: 6
+          ramRatio: 2
+          shmSizeGB: 0
