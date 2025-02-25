@@ -14,7 +14,7 @@ spec:
   debug:
     jupyter: false
 
-  tensorboard: # optional, disabled by default
+  tensorboard: ## optional, disabled by default
     enabled: true
 
   types:
