@@ -28,10 +28,10 @@ spec:
             product: NVIDIA-A100-SXM4-40GB
             type: gpu
 
-    Workers:
-      - name: cpu-workers
-        count: 5
-        resources:
-          cpus: 6
-          ramRatio: 2
-          shmSizeGB: 0
+    # Workers:
+    #   - name: cpu-workers
+    #     count: 5
+    #     resources:
+    #       cpus: 6
+    #       ramRatio: 2
+    #       shmSizeGB: 0
