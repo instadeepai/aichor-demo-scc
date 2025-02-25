@@ -20,11 +20,11 @@ spec:
   types:
     Head:
       resources:
-        cpus: 6
-        ramRatio: 6
-        accelerators: # optional
+        cpus: 16
+        ramRatio: 4  # 16 * 4 = 64 Go de RAM
+        accelerators:
           gpu:
-            count: 1
+            count: 2
             product: NVIDIA-A100-SXM4-40GB
             type: gpu
 
