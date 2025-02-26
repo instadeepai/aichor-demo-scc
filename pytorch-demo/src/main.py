@@ -1,7 +1,5 @@
 from __future__ import print_function
-
 import os
-
 import torch
 from tensorboardX import SummaryWriter
 import torch.nn as nn
